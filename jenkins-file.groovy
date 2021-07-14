@@ -9,14 +9,14 @@ pipeline {
         stage("build") {
             when {
                 expression {
-                    prams.executeTest
+                    params.executeTest
                 }
             }
             steps {
                 echo 'building the application....'
             }
         }
-        stage("testing") {
+        stage("test") {
             steps {
                 echo 'testing the application....'
             }
