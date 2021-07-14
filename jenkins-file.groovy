@@ -9,8 +9,9 @@ pipeline {
         stage("build") {
             when {
                 expression {
-                    prams.executeTest == true
+                    prams.executeTest
                 }
+            }
             steps {
                 echo 'building the application....'
             }
